@@ -1,10 +1,19 @@
 import React from 'react';
 import { Box, VStack, HStack, Image, Text } from '@chakra-ui/react';
+import Form from '../components/form.jsx';
+import Carousel from '../components/carousel.jsx';
 import blueStang from './img/stangLogo.png';
 import Boat from './img/boat.png';
 import Wheels from './img/carWheels.png';
 
 const App = () => {
+
+  const images = [
+    'https://4.img-dpreview.com/files/p/E~TS590x0~articles/3925134721/0266554465.jpeg',
+    'https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg',
+    'https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg',
+  ];
+
   return (
     <Box>
       <VStack spacing={0} align="center">
@@ -49,16 +58,7 @@ const App = () => {
             >
               Contact Us
             </Text>
-            <Text
-              fontFamily="body"
-              textStyle='light'
-              color="#FFFFFF"
-              fontSize="15px"
-              width="75%"
-              textAlign="left"
-            >
-              this will be the form for a quick comment of question 
-            </Text>
+            <Form />
           </VStack>
         </HStack>
 
@@ -75,16 +75,7 @@ const App = () => {
             >
               Book an Appointment 
             </Text>
-            <Text
-              fontFamily="body"
-              textStyle='light'
-              color="#FFFFFF"
-              fontSize="15px"
-              width="75%"
-              textAlign="left"
-            >
-             two or three options to book directly from here.
-            </Text>
+            <Carousel/>
           </VStack>
           <Image src={Wheels} width="60%" alt="Car Wheels" />
         </HStack>

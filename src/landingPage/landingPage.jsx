@@ -3,14 +3,12 @@ import blueStang from './imgs/stangLogo.png';
 import Boat from './imgs/boat.png'
 import {
   Box,
-  Grid,
   Image,
   HStack,
   VStack,
   Text,
 } from '@chakra-ui/react';
 import '../global.css';
-import theme from '../theme';
 
 const App = () => {
   return (
